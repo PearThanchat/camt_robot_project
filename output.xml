@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.7 on darwin)" generated="2024-10-11T00:28:43.039644" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Product Purchase" source="/Users/SupattraTasuya/Desktop/camt_robot/camt_robot_project/test_product_purchase.robot">
+<test id="s1-t1" name="Successful Product Purchase" line="7">
+<kw name="Open Browser To Home Page" owner="import">
+<msg time="2024-10-11T00:28:43.340897" level="FAIL">Variable '${url}' not found.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>เปิดหน้าแรกของเว็บไซต์</doc>
+<status status="FAIL" start="2024-10-11T00:28:43.340294" elapsed="0.000676">Variable '${url}' not found.</status>
+</kw>
+<kw name="Login Successful" owner="import">
+<arg>${username.standard_user}</arg>
+<arg>${password}</arg>
+<doc>ทำการล็อกอินเข้าสู่ระบบ</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.341903" elapsed="0.000795"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<var>${product_index}</var>
+<arg>4</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.345899" elapsed="0.000092"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<var>${select_product}</var>
+<arg>${products}</arg>
+<arg>${product_index}</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.346529" elapsed="0.000052"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<var>${product_name}</var>
+<arg>${select_product}</arg>
+<arg>name</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.347094" elapsed="0.000045"/>
+</kw>
+<kw name="Get From Dictionary" owner="Collections">
+<var>${product_price}</var>
+<arg>${select_product}</arg>
+<arg>price</arg>
+<doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.347501" elapsed="0.000042"/>
+</kw>
+<kw name="Add Product To Cart" owner="import">
+<arg>${product_index}</arg>
+<doc>เพิ่มสินค้าลงในตะกร้า</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.347995" elapsed="0.000054"/>
+</kw>
+<kw name="Go To Cart" owner="import">
+<doc>ไปยังหน้าตะกร้าสินค้า</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.352329" elapsed="0.000442"/>
+</kw>
+<kw name="Verify Product Detials" owner="import">
+<arg>${product_name}</arg>
+<arg>${product_price}</arg>
+<doc>ตรวจสอบรายละเอียดสินค้า</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.353272" elapsed="0.000098"/>
+</kw>
+<kw name="Checkout From Cart" owner="import">
+<doc>ทำการสั่งซื้อสินค้า</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.354646" elapsed="0.000075"/>
+</kw>
+<kw name="Finish Checkout" owner="import">
+<doc>ทำการยืนยันการสั่งซื้อสินค้า</doc>
+<status status="NOT RUN" start="2024-10-11T00:28:43.355215" elapsed="0.000119"/>
+</kw>
+<doc>ทดสอบการสั่งซื้อสินค้าสำเร็จและตรวจสอบราคาสินค้า</doc>
+<status status="FAIL" start="2024-10-11T00:28:43.338543" elapsed="0.017728">Variable '${url}' not found.</status>
+</test>
+<status status="FAIL" start="2024-10-11T00:28:43.041797" elapsed="0.315350"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test Product Purchase">Test Product Purchase</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-11T00:28:43.336703" level="ERROR">Error in file '/Users/SupattraTasuya/Desktop/camt_robot/camt_robot_project/import.resource' on line 5: Processing variable file '/Users/SupattraTasuya/Desktop/camt_robot/camt_robot_project/data.yaml' failed: Using YAML variable files requires PyYAML module to be installed. Typically you can install it by running `pip install pyyaml`.</msg>
+</errors>
+</robot>

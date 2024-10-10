@@ -1,0 +1,17 @@
+1728190370028	geckodriver	INFO	Listening on 127.0.0.1:53224
+1728190370041	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/xp/mz33rxyn5dq9xnfgqxwqzzf80000gn/T/rust_mozprofileT07wU0"
+1728190370727	Marionette	INFO	Marionette enabled
+1728190370859	Marionette	INFO	Listening on port 53235
+Read port: 53235
+2024-10-06 11:52:51.095 plugin-container[60531:684247] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-10-06 11:52:51.096 plugin-container[60531:684247] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2024-10-06 11:52:51.101 plugin-container[60531:684247] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-10-06 11:52:51.101 plugin-container[60531:684247] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2024-10-06 11:52:51.101 plugin-container[60531:684250] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2024-10-06 11:52:51.101 plugin-container[60531:684250] nil host used in call to allowsAnyHTTPSCertificateForHost:
+WebDriver BiDi listening on ws://127.0.0.1:53225
+1728190371207	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/xp/mz33rxyn5dq9xnfgqxwqzzf80000gn/T/rust_mozprofileT07wU0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53225/devtools/browser/5863a734-2e62-46e2-b264-ae907fc1c5e7
+1728286007536	Marionette	INFO	Stopped listening on port 53235
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
